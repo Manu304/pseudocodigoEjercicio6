@@ -19,7 +19,17 @@ Proceso Ejercicio6Parte2
 		FinSi
 	FinPara
 	
-	mayorP <- mayorT/mayorC
-	menorP <- menorT/menorC
+	Si mayorC == 0 Entonces
+		mayorP <- 0
+	SiNo
+		mayorP <- mayorT/mayorC
+	FinSi
+	
+	Si menorC == 0 Entonces
+		menorC <- 0
+	SiNo
+		menorP <- menorT/menorC
+	FinSi
+	
 	Escribir "El promedio de edad de las personas mayores a 25 años es: ", mayorP, " años y el promedio de las personas menores a 25 años es: ", menorP, " años."
 FinProceso
