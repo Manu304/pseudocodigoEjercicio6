@@ -6,13 +6,13 @@ import java.util.Scanner;
 //personas mayores o iguales a 25 años.
 public class Ejercicio6Parte2 {
     public static void main(String[] args) {
-        int mayorC = 0, menorC = 0, mayorT = 0, menorT = 0;
+        double mayorC = 0, menorC = 0, mayorT = 0, menorT = 0;
         double mayorP = 0, menorP = 0;
         final int PERSONA = 100;
         Scanner scanner = new Scanner(System.in);
         for(int i=0; i < PERSONA; i++){
             System.out.print("Ingrese una edad: ");
-            int edad = scanner.nextInt();
+            double edad = scanner.nextDouble();
             if(edad < 25){
                 menorC++;
                 menorT += edad;
